@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+    <title>Traffic safety multiple-choice test</title>
+    <style type="text/css">
+        .show_answers{
+            display: none;
+        }
+        h2.title{
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        body {
+        font-family: "Alatsi", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        ul.answers{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="title">Thi trắc nghiệm bằng lái A1</h2>
+    <div class="question" id="question">
+        <h4 id="title"></h4>
+        <ul class="answers">
+            <li>
+                <input type="radio" name="answer" class="answer" id="a">
+                <label for="a" id="answer_a"></label>
+            </li>
+            <li>
+                <input type="radio" name="answer" class="answer" id="b">
+                <label for="b" id="answer_b"></label>
+            </li>
+            <li id="sentence_c">
+                <input type="radio" name="answer" class="answer" id="c">
+                <label for="c" id="answer_c"></label>
+            </li>
+            <li id="sentence_d">
+                <input type="radio" name="answer" class="answer" id="d">
+                <label for="d" id="answer_d"></label>
+            </li>
+            <input type="hidden" id="right_sentence">
+            <input type="hidden" id="total_questions">
+
+        </ul>
+        <!-- <button id="previous" class="btn btn-primary">Câu trước</button> -->
+        <button id="submit" class="btn btn-primary">Câu tiếp theo</button>
+
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
